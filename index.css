@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+.mainImg {
+    display: block; 
+    margin: 20px auto;
+}
+
+.cameraBtn {
+    background-color: lightskyblue;
+    width: 190px;
+    height: 100px;
+    margin : 5px 0 5px 5px;
+    float: left;
+    border: 0;
+}
+
+.gpsBtn {
+    background-color: lightsteelblue;
+    width: 190px;
+    height: 100px;
+    margin : 5px 5px 5px 5px;
+    border: 0;
+}
+
+
+.btn_1 {
+    background-color: lightsteelblue ;
+    width: 92px;
+    height: 100px;
+    margin : 0 0 5px 5px;
+    float: left;
+    border: 0;
+}
+
+.btn_2 {
+    background-color: lightskyblue;
+    width: 190px;
+    height: 100px;
+    margin : 0 5px 5px 5px;
+    float: left;
+    border: 0;
+}
+
+.btn_3 {
+    background-color: lightsteelblue ;
+    width: 92px;
+    height: 100px;
+    margin : 0 5px 5px 0;
+    float: left;
+    border: 0;
+}
+

@@ -7,11 +7,18 @@ html, body {
     margin: 20px auto;
 }
 
+.img {
+    width: 40px;
+    height: 40px;
+    display: block; 
+    margin: 5px auto;
+}
+
 .cameraBtn {
     background-color: lightskyblue;
     width: 190px;
     height: 100px;
-    margin : 5px 0 5px 5px;
+    margin : 5px 0 0px 5px;
     float: left;
     border: 0;
 }
@@ -20,7 +27,8 @@ html, body {
     background-color: lightsteelblue;
     width: 190px;
     height: 100px;
-    margin : 5px 5px 5px 5px;
+    margin : 5px 5px 0px 5px;
+    float: left;
     border: 0;
 }
 
@@ -29,7 +37,7 @@ html, body {
     background-color: lightsteelblue ;
     width: 92px;
     height: 100px;
-    margin : 0 0 5px 5px;
+    margin : 5px 0 0 5px;
     float: left;
     border: 0;
 }
@@ -38,7 +46,7 @@ html, body {
     background-color: lightskyblue;
     width: 190px;
     height: 100px;
-    margin : 0 5px 5px 5px;
+    margin : 5px 5px 0 5px;
     float: left;
     border: 0;
 }
@@ -47,7 +55,7 @@ html, body {
     background-color: lightsteelblue ;
     width: 92px;
     height: 100px;
-    margin : 0 5px 5px 0;
+    margin : 5px 5px 0 0;
     float: left;
     border: 0;
 }

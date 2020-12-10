@@ -54,7 +54,7 @@ class Gps
     getStop(e)
     {
         const data = {
-            id: 'getStop'
+            id: 'getStop',
         }
         
         window.parent.postMessage(data, '*');
@@ -72,6 +72,8 @@ class Gps
 
             default:
                 this.getStop();
+                this.latitude.value = '';
+                this.longitude.value = '';
                 console.log("GPS OFF");
                 break;
         }
@@ -80,7 +82,6 @@ class Gps
     // 메인화면으로 돌아가기
     getBtnHome()
     {
-        console.log("홈홈스위트홈");
         window.location.href = '../index.html';
     }
 }

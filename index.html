@@ -7,46 +7,30 @@
     <title>zoasoft</title>
 </head>
 <body>
-    <image class="mainImg" src="./ICON.png"></image>
-    <div class="section_1">
-        <div>
-            <button class="cameraBtn" id="cameraView">
-                <image class="img" src="./ICON.png"></image>
-                카메라
-            </button>
-        </div>
-        <div>
-            <button class="gpsBtn" id="gpsView">
-                <image class="img" src="./ICON.png"></image>
-                GPS
-            </button>
-        </div>
-        <!-- 
-        <div class="section_3">
-            <button class="btn" id="gpsView">버튼</button>
-        </div> 
-        -->
+    <!-- 추후 삭제 :: navigation bar -->
+    <div class="app-bar">
+        <a class="list-tab"></a>
+        <h1 class="list-tab"> 모바일 프로젝트</h1>
+        <a class="list-tab"></a>
     </div>
+    
+    <image class="mainImg" src="./img/LOGO.png"></image>
 
-    <div class="section_2">
-        <div>
-            <button class="btn_1" id="cameraView">
-                <image class="img" src="./ICON.png"></image>
-                학사일정
-            </button>
-        </div>
-        <div>
-            <button class="btn_2" id="gpsView">
-                <image class="img" src="./ICON.png"></image>
-                상담
-            </button>
-        </div> 
-        <div class="section_3">
-            <button class="btn_3" id="gpsView">
-                <image class="img" src="./ICON.png"></image>
-                학생회
-            </button>
-        </div> 
+    <!-- 버튼 2개 정렬 -->
+    <div class="btn">
+        <button class="btnMG_2px btnSize_W50 btn_camera" id="cameraView">
+            <image class="icon" src="./img/ICON.png"></image>카메라</button>
+        <button class="btnMG_2px btnSize_W50 btn_gps" id="gpsView">
+            <image class="icon" src="./img/ICON.png"></image>GPS</button>
+    </div>
+    <!-- 버튼 3개 정렬 -->
+    <div class="btn">
+        <button class="btnMG_2px btnSize_W33 btn_1" id="cameraView">
+            <image class="icon" src="./img/ICON.png"></image>공지</button>
+        <button class="btnMG_2px btnSize_W33 btn_2" id="gpsView">
+            <image class="icon" src="./img/ICON.png"></image>일정</button>
+        <button class="btnMG_2px btnSize_W33 btn_3" id="gpsView">
+            <image class="icon" src="./img/ICON.png"></image>상담</button>
     </div>
 
 </body>

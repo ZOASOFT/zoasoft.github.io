@@ -33,6 +33,7 @@ class Gps
                 this.latitude.value = this.latitudeG;
                 this.longitude.value = this.longitudeG;
 
+                console.log("위도 : " + this.latitude.value, " / 경도 : " + this.longitude.value);
                 break;
 
             default:

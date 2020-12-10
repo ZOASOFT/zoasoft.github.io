@@ -15,6 +15,10 @@ class Gps
 
         // input#longitude
         this.longitude = document.getElementById('longitude');
+
+        // button#btnBack
+        this.btnHome = document.getElementById('btnHome');
+        this.btnHome.addEventListener('click', this.getBtnHome.bind(this), false);
     }
     
     // message 수신
@@ -71,6 +75,13 @@ class Gps
                 console.log("GPS OFF");
                 break;
         }
+    }
+
+    // 메인화면으로 돌아가기
+    getBtnHome()
+    {
+        console.log("홈홈스위트홈");
+        window.location.href = '../index.html';
     }
 }
 

@@ -9,6 +9,10 @@ class App
         // GPS Button Event
         this.gpsView = document.getElementById('gpsView');
         this.gpsView.addEventListener('click', this.getView.bind(this), false);
+
+        // QR Scan Button Event
+        this.qrScan = document.getElementById('qrScan');
+        this.qrScan.addEventListener('click', this.getView.bind(this), false);
     }
 
     getView(e)
@@ -21,6 +25,10 @@ class App
                 
             case 'gpsView':
                 window.location.href = './gps/gps.html';
+                break;
+            
+            case 'qrScan':
+                window.location.href = './qrScan/qrScan.html';
                 break;
         
             default:

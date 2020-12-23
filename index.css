@@ -85,6 +85,12 @@ html, body {
     height: 100px;
 }
 
+/* size : 33% x 100px */
+.btnSize_W100 {
+    width: 100%;
+    height: 100px;
+}
+
 /* 버튼 2개 정렬 */
 .btn_camera {
     background-color: lightskyblue;

@@ -15,6 +15,10 @@ class Gps
 
         // input#longitude
         this.longitude = document.getElementById('longitude');
+
+        // button#btnBack
+        this.btnHome = document.getElementById('btnHome');
+        this.btnHome.addEventListener('click', this.getBtnHome.bind(this), false);
     }
     
     // message 수신
@@ -29,6 +33,7 @@ class Gps
                 this.latitude.value = this.latitudeG;
                 this.longitude.value = this.longitudeG;
 
+                console.log("위도 : " + this.latitude.value, " / 경도 : " + this.longitude.value);
                 break;
 
             default:
@@ -50,7 +55,7 @@ class Gps
     getStop(e)
     {
         const data = {
-            id: 'getStop'
+            id: 'getStop',
         }
         
         window.parent.postMessage(data, '*');
@@ -68,9 +73,17 @@ class Gps
 
             default:
                 this.getStop();
+                this.latitude.value = '';
+                this.longitude.value = '';
                 console.log("GPS OFF");
                 break;
         }
+    }
+
+    // 메인화면으로 돌아가기
+    getBtnHome()
+    {
+        window.location.href = '../index.html';
     }
 }
 

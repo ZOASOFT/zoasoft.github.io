@@ -1,6 +1,5 @@
 html, body {
     width: 100%;
-    height: 100%;
     margin: 0;
 }
 
@@ -117,3 +116,44 @@ html, body {
     background-color: lightsteelblue ;
     border: 0;
 }
+
+/* 공지사항 테이블 */
+table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+ 
+  tr {
+    display: table-row;
+  }
+
+  th h3 {
+    display: table-cell;
+    text-align: left;
+    height:50px;
+    vertical-align: middle;
+    font-weight: bold;
+    color : darkslategrey
+  }
+
+  td {
+    display: table-cell;
+    border: 1px solid #333;
+    vertical-align: middle;
+    height:30px;
+    font-size: 0.3em;
+  }
+
+  .td_70 {
+    width: 80%;
+    text-align: left;
+  }
+
+  .td_30 {
+    width: 20%;
+    text-align: center;
+  }

@@ -11,6 +11,10 @@ class App
 
         // img#gallery
         this.gallery = document.getElementById('gallery');
+
+         // button#btnBack
+         this.btnHome = document.getElementById('btnHome');
+         this.btnHome.addEventListener('click', this.getBtnHome.bind(this), false);
     }
 
     getCamera(e)
@@ -33,6 +37,12 @@ class App
             default:
                 break;
         }
+    }
+
+    // iFrame 메인화면으로 돌아가기
+    getBtnHome()
+    {
+        window.location.href = '../index.html';
     }
 }
 

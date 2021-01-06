@@ -6,8 +6,8 @@ class Gps
         window.addEventListener('message', this.getMessage.bind(this), false);
 
         //checkBox#gpsToggle ::ON/OFF 토글
-        // this.check = document.getElementById('gpsToggle');
-        // this.check.addEventListener('click', this.getGpsToggle.bind(this), false);
+        this.check = document.getElementById('gpsToggle');
+        this.check.addEventListener('click', this.getGpsToggle.bind(this), false);
 
         // button#gps
         this.gps = document.getElementById('gps');
@@ -56,33 +56,33 @@ class Gps
     }
 
     // GPS 해제 message 발신
-    // getGpsStop(e)
-    // {
-    //     const data = {
-    //         id: 'getGpsStop',
-    //     }
+    getGpsStop(e)
+    {
+        const data = {
+            id: 'getGpsStop',
+        }
         
-    //     window.parent.postMessage(data, '*');
-    // }
+        window.parent.postMessage(data, '*');
+    }
 
     // GPS [ON/OFF] Toggle
-    // getGpsToggle(e)
-    // {        
-    //     switch(this.check.checked)
-    //     {  
-    //         case true:
-    //             this.getGps();
-    //             console.log("GPS ON");
-    //             break;
+    getGpsToggle(e)
+    {        
+        switch(this.check.checked)
+        {  
+            case true:
+                this.getGps();
+                console.log("GPS ON");
+                break;
 
-    //         default:
-    //             this.getGpsStop();
-    //             this.latitude.value = '';
-    //             this.longitude.value = '';
-    //             console.log("GPS OFF");
-    //             break;
-    //     }
-    // }
+            default:
+                this.getGpsStop();
+                this.latitude.value = '';
+                this.longitude.value = '';
+                console.log("GPS OFF");
+                break;
+        }
+    }
 
     // iFrame 메인화면으로 돌아가기
     getBtnHome()

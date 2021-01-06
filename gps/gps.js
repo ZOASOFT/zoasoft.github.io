@@ -10,8 +10,8 @@ class Gps
         this.check.addEventListener('click', this.getGpsToggle.bind(this), false);
 
         // button#gps
-        this.gps = document.getElementById('gps');
-        this.gps.addEventListener('click', this.getGps.bind(this), false);
+        // this.gps = document.getElementById('gps');
+        // this.gps.addEventListener('click', this.getGps.bind(this), false);
 
 
         // input#latitude
@@ -27,7 +27,7 @@ class Gps
     
     // message 수신
     getMessage(e)
-    {
+    {     
         switch(e.data.id)
         {
             case 'setGps':
